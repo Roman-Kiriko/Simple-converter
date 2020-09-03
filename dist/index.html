@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+        <div id="converter" class="converter">
+            <div class="converter__logo">
+                <img v-bind:src="image" width="150px" >
+            </div>
+            <div class="converter__title">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="converter__block">
+                <div class="converter__block-select">
+                    <select name="" id="">
+                        <option value="">USD</option>
+                    </select>
+                </div>
+                <div class="converter__block-input">
+                    <input type="number" value="1">
+                </div>
+            </div>
+            <div class="converter__block">
+                <div class="converter__block-btn">
+                    <button class="btn btn-success">Swap</button>
+                </div>
+                <div class="converter__block-info">
+                    <span>1 USD = 0.912211 EUR</span>
+                </div>
+            </div> 
+            <div class="converter__block">
+                <div class="converter__block-select">
+                    <select name="" id="">
+                        <option value="">EUR</option>
+                    </select>
+                </div>
+                <div class="converter__block-input">
+                    <input type="number">
+                </div>
+            </div>
+
+
+
+        </div>  
+
+<script src="main.js"></script></body>
+</html>

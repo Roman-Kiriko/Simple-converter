@@ -1,0 +1,71 @@
+@import '~normalize.css';
+@import '~bootstrap';
+@import './variables';
+
+
+body {
+    background-color: $main-color;
+}
+
+h1 {
+    color: $text-color;
+}
+
+
+
+
+.converter {
+
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding: 0 100px;
+
+        &-input  input{
+            background-color: $main-color;
+            width: 150px;
+            border: none;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 600;
+        }
+        &-select select {
+            background-color: $main-color;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        &-info {
+            font-size: 14px;
+            color: $text-color;
+
+        }
+        &-btn {
+            margin-left: -15px;
+        }
+
+    }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
